@@ -14,8 +14,10 @@ const transferCreationDate = (dateFormString: string) => {
 
   if (creationDate < 1 * SECOND) return '방금 전';
   if (creationDate < 1 * MINUTE) return `${creationDate}초 전`;
-  if (creationDate >= 1 * MINUTE && creationDate < 1 * HOUR) return `${creationDate / MINUTE}분 전`;
-  if (creationDate >= 1 * HOUR && creationDate < 24 * HOUR) return `${creationDate / HOUR}시간 전`;
+  if (creationDate >= 1 * MINUTE && creationDate < 1 * HOUR)
+    return `${Math.round(creationDate / MINUTE)}분 전`;
+  if (creationDate >= 1 * HOUR && creationDate < 24 * HOUR)
+    return `${Math.round(creationDate / HOUR)}시간 전`;
   if (creationDate >= 24 * HOUR && creationDate < 8 * DAY) {
     return `${Math.round(creationDate / DAY)}일 전`;
   }
