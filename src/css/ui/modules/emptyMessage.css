@@ -12,3 +12,7 @@
   text-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
   white-space: nowrap;
 }
+
+.empty-description {
+  white-space: pre-wrap;
+}

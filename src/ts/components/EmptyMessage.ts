@@ -9,7 +9,7 @@ const EmptyMessage: Component<Props> = ({ message = '' }) => {
   const $emptyMessage = createNode(`
     <div class="empty-message-wrapper">
       <span class="empty-message">텅-</span>
-      <span>${message}</span>
+      <span class="empty-description">${message}</span>
     </div>
   `);
 

@@ -27,7 +27,7 @@ const ToWatch: Component<Props> = () => {
               isLike: video.isLike,
             });
           })
-        : [EmptyMessage({ message: '볼 영상이 없습니다 :(' })],
+        : [EmptyMessage({ message: '볼 영상이 없습니다 :( \n동영상을 검색해서 추가해보세요!' })],
     }),
   ]);
 
